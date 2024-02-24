@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" external-system-id="Maven" name="spring-security-login:war">
+    <output-path>$PROJECT_DIR$/Backend/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>spring-security-login</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="spring-security-login-1.0.0.war">
+      <element id="artifact" artifact-name="spring-security-login:war exploded" />
+    </root>
+  </artifact>
+</component>
