@@ -11,8 +11,8 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.Route;
 
-import DashBoard.DashBoard;
-import Form.LoginPage;
+import dashboardLayout.DashBoard;
+import sidenav.asideNav;
 
 /**
  * A sample Vaadin view class.
@@ -26,7 +26,7 @@ import Form.LoginPage;
  * The main view contains a text field for getting the user name and a button
  * that shows a greeting message in a notification.
  */
-@Route("")
+@Route()
 public class MainView extends VerticalLayout {
 
     /**
@@ -40,13 +40,15 @@ public class MainView extends VerticalLayout {
      */
     public MainView(@Autowired GreetService service) {
 
-      LoginPage login = new LoginPage();
-       add(login);
-  	
+     loginLayoutView.LoginPage login = new loginLayoutView.LoginPage();      
+      add(login);
+    	
 //	DashBoard dashBoard = new DashBoard();
-//   	 add(dashBoard);
-//    	 
-    	 
+//  	add(dashBoard);
+//  	
+//    	
+//  	asideNav side = new asideNav();    	
+//  	add(side);
+//  	 	 	
+      }
     }
-
-}
